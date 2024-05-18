@@ -1,14 +1,26 @@
 pipeline {
 agent any
+options { skipDefaultCheckout() }   
 stages {
- stage("Code Checkout from Github") {
-  steps {
-   git branch: 'main',
-    credentialsId: 'GitHub',
-    url: 'git@github.com:Ashok7867/devops-python-assignment.git'
-  }
- }
-   stage('Code Analysis') {
+    stage('CleanWorkspace') {
+        steps {
+            cleanWs()
+            }
+        }
+    stage("Code Checkout from Github") {
+        steps {
+            git branch: 'main',
+            credentialsId: 'GitHub',
+            url: 'git@github.com:Ashok7867/devops-python-assignment.git'
+                }
+            }
+    stage('Build') {
+            steps {
+                sh 'pip install -r requirements.txt'
+                sh 'python3 app.py'
+            }
+        }
+    stage('Code Analysis') {
             environment {
                 scannerHome = tool 'Sonar'
             }
