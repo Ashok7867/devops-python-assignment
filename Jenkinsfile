@@ -31,7 +31,8 @@ stages {
                             -Dsonar.projectKey=python-sample-app \
                             -Dsonar.projectName=python-sample-app \
                             -Dsonar.projectVersion=1.0 \
-                            -Dsonar.sources=."
+                            -Dsonar.sources=. \
+                            -Dsonar.python.version=3"
                     }
                 }
             }
