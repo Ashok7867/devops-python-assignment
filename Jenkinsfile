@@ -38,4 +38,12 @@ stages {
             }
         }
     }
+post { 
+    success { 
+        archiveArtifacts artifacts: '**/*', fingerprint: true
+        }
+    cleanup {
+        cleanWs() /* clean up our workspace */
+        }
+    } 
 }
