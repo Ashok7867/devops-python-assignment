@@ -17,7 +17,7 @@ stages {
     stage('Build') {
             steps {
                 sh 'pip3 install -r requirements.txt'
-                sh 'python3 app.py'
+                sh 'python3 app.py &> /dev/null &'
             }
         }
     stage('Code Analysis') {
