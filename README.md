@@ -1,10 +1,10 @@
-# Deploy a Python (Flask) web app to Azure App Service - Sample Application
+# Deploy a Python (Flask) web app - Sample Application
 
-This is the sample Flask application for the Azure Quickstart [Deploy a Python (Django or Flask) web app to Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-python). For instructions on how to create the Azure resources and deploy the application to Azure, refer to the Quickstart article.
+This is the sample Flask python application.
 
-Sample applications are available for the other frameworks here:
+* Sample Python (Flash) app code repository URL:- https://github.com/Ashok7867/devops-python-assignment.git
+* Sample Python (Flash) app access URL:- https://devops-python-webapp.azurewebsites.net/
 
-* Django [https://github.com/Azure-Samples/msdocs-python-django-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-django-webapp-quickstart)
-* FastAPI [https://github.com/Azure-Samples/msdocs-python-fastapi-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-fastapi-webapp-quickstart)
+You can find the below screenshot of successfully deployed flask application.
 
-If you need an Azure account, you can [create one for free](https://azure.microsoft.com/en-us/free/).
+![image](https://github.com/Ashok7867/devops-python-assignment/assets/64205445/85d61b7a-b64f-4e40-bc02-73856a5578ae)
